@@ -1,6 +1,6 @@
 body {
   margin-top: 70px;
-  background: rgb(134, 134, 134);
+  background: white;
   /* color: white; */
 }
 
@@ -12,7 +12,7 @@ body {
   width: 98%;
   height: 8em;
   border: none;
-  background-color: rgb(134, 134, 134);
+  background-color: white;
   text-align: end;
   color: white;
 
