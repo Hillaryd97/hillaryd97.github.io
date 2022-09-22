@@ -1,6 +1,6 @@
 body {
   margin-top: 70px;
-  background: rgb(37, 36, 36);
+  background: rgb(134, 134, 134);
   /* color: white; */
 }
 
@@ -12,7 +12,7 @@ body {
   width: 98%;
   height: 8em;
   border: none;
-  background-color: rgb(37, 36, 36);
+  background-color: rgb(134, 134, 134);
   text-align: end;
   color: white;
 
@@ -50,8 +50,8 @@ body {
 }
 @media only screen and (max-width: 990px) {
   .calculator {
-    border: 1px solid black;
-    width: 100%;
+    /* border: 1px solid black; */
+    width: 95%;
     /* height: 100%; */
     margin: 0 auto;
   }
