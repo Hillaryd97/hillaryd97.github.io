@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="">
+        <div class="calculator">
+            <form id="calc-box" class="">
+                <div class="row p-0">
+                    <div class="col-12 p-0">
+                        <input type="text" id="result" class="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 borderr btn btn-danger "><input class="btn btn-lg" type="button" value="C" onclick="clearScreen()"></div>
+                    <div class="col-3 borderr btn btn-danger "><input class="btn btn-lg" type="button" value="." onclick="display('.')"></div>
+                    <div class="col-3 borderr btn btn-danger "><input class="btn btn-lg" type="button" value="/" onclick="display('/')"></div>
+                    <div class="col-3 borderr btn btn-danger "><input class="btn btn-lg" type="button" value="+" onclick="display('+')"></div>
+                </div>
+                <div class="row">
+                    <div class="col-3 borderr btn btn-primary "><input class="btn btn-lg" type="button" value="7" onclick="display('7')"></div>
+                    <div class="col-3 borderr btn btn-primary "><input class="btn btn-lg" type="button" value="8" onclick="display('8')"></div>
+                    <div class="col-3 borderr btn btn-primary "><input class="btn btn-lg" type="button" value="9" onclick="display('9')"></div>
+                    <div class="col-3 borderr btn btn-danger  "><input class="btn btn-lg" type="button" value="*" onclick="display('*')"></div>
+                </div>
+                <div class="row">
+                    <div class="col-3 borderr btn btn-primary "><input class="btn btn-lg" type="button" value="4" onclick="display('4')"></div>
+                    <div class="col-3 borderr btn btn-primary "><input class="btn btn-lg" type="button" value="5" onclick="display('5')"></div>
+                    <div class="col-3 borderr btn btn-primary "><input class="btn btn-lg" type="button" value="6" onclick="display('6')"></div>
+                    <div class="col-3 borderr btn btn-danger  "><input class="btn btn-lg" type="button" value="-" onclick="display('-')"></div>
+                </div>
+                <div class="row">
+                    <div class="col-3 borderr btn btn-primary "><input class="btn btn-lg" type="button" value="1" onclick="display('1')"></div>
+                    <div class="col-3 borderr btn btn-primary "><input class="btn btn-lg" type="button" value="2" onclick="display('2')"></div>
+                    <div class="col-3 borderr btn btn-primary "><input class="btn btn-lg" type="button" value="3" onclick="display('3')"></div>
+                    <div class="col-3 borderr btn btn-danger  "><input class="btn btn-lg" type="button" value="%" onclick="percent()"></div>
+                </div>
+                <div class="row">
+                    <!-- <div class="col-1"></div> -->
+                    <div onclick="display('0')" class="col-9 borderr btn btn-primary"><input type="button" class="btn btn-lg" value="0" ></div>
+                    <!-- <div class="col-6"></div> -->
+                    <!-- <div class="col-3 borderr btn btn-primary"><input class="btn btn-lg" type="button" value="(" onclick="display('')"></div> -->
+                    <!-- <div class="col-6 borderr btn btn-primary"><input class="btn btn-lg" type="button" value="" onclick="display('')"></div> -->
+                    <div class="col-3 borderr btn btn-danger "><input type="button" class="btn btn-lg" value="=" onclick= "calculate()"></div>
+                    <!-- <div class="col-1"></div> -->
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
